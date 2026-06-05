@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPRIME Suplementos | Performance de Elite</title>
+    <meta name="description" content="GPRIME Suplementos - Potencialize seus treinos com suplementos de alta performance. Whey Protein, Creatina, Pré-treino e mais.">
+    <meta name="keywords" content="GPRIME, suplementos, whey protein, creatina, pré-treino, BCAA, performance, fitness, bodybuilding">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar" id="top-bar">
+        <div class="top-bar__inner">
+            <span>FRETE GRÁTIS acima de R$199 &bull; Parcele em até 6x sem juros</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="/" class="header__logo" id="logo">
+                <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/GPRIME%20SUPLEMENTOS%20%20sem%20fundo.png" alt="GPRIME Suplementos" class="logo-image">
+            </a>
+
+            <nav class="header__nav" id="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#produtos" class="nav-link">Produtos</a>
+                        <div class="nav-dropdown" id="dropdown-produtos">
+                            <div class="nav-dropdown__inner">
+                                <div class="nav-dropdown__col">
+                                    <h4 class="nav-dropdown__title">Proteínas</h4>
+                                    <ul class="nav-dropdown__list">
+                                        <li><a href="#">Whey Protein Isolado</a></li>
+                                        <li><a href="#">Whey Protein Concentrado</a></li>
+                                        <li><a href="#">Caseína</a></li>
+                                        <li><a href="#">Proteína Vegana</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-dropdown__col">
+                                    <h4 class="nav-dropdown__title">Performance</h4>
+                                    <ul class="nav-dropdown__list">
+                                        <li><a href="#">Creatina</a></li>
+                                        <li><a href="#">Pré-Treino</a></li>
+                                        <li><a href="#">BCAA</a></li>
+                                        <li><a href="#">Glutamina</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav-dropdown__col">
+                                    <h4 class="nav-dropdown__title">Saúde</h4>
+                                    <ul class="nav-dropdown__list">
+                                        <li><a href="#">Multivitamínico</a></li>
+                                        <li><a href="#">Ômega 3</a></li>
+                                        <li><a href="#">Colágeno</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Nossa História</a></li>
+                    <li class="nav-item"><a href="#atletas" class="nav-link">Atletas</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#onde-comprar" class="nav-link">Onde Comprar</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="header__search-btn" id="search-toggle" aria-label="Buscar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                </button>
+                <button class="header__menu-btn" id="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="main-nav">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="search-overlay" hidden>
+            <form class="search-form" action="/busca">
+                <input type="search" name="q" placeholder="Buscar produtos..." class="search-input" id="search-input">
+                <button type="submit" class="search-submit">Buscar</button>
+                <button type="button" class="search-close" id="search-close" aria-label="Fechar busca">✕</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero__slider" id="hero-slider">
+                <!-- Slide 1 -->
+                <div class="hero__slide hero__slide--active" data-slide="0">
+                    <div class="hero__media">
+                        <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/hero.jpg" alt="Whey Protein Isolado GPRIME">
+                    </div>
+                    <div class="hero__content">
+                        <div class="hero__content-inner">
+                            <p class="hero__label">Lançamento</p>
+                            <h1 class="hero__title">WHEY PROTEIN<br>ISOLADO</h1>
+                            <p class="hero__subtitle">25g de proteína pura por dose. Zero lactose. Absorção ultrarrápida.</p>
+                            <div class="hero__actions">
+                                <a href="#" class="btn btn--primary">Conheça Agora</a>
+                                <a href="#" class="btn btn--outline">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="hero__slide" data-slide="1">
+                    <div class="hero__media">
+                        <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/creatina.jpg" alt="Creatina Monohidratada GPRIME">
+                    </div>
+                    <div class="hero__content">
+                        <div class="hero__content-inner">
+                            <p class="hero__label">Performance Extrema</p>
+                            <h1 class="hero__title">CREATINA<br>MONOHIDRATADA</h1>
+                            <p class="hero__subtitle">5g por dose. Pureza certificada. Força e volume muscular.</p>
+                            <div class="hero__actions">
+                                <a href="#" class="btn btn--primary">Comprar</a>
+                                <a href="#" class="btn btn--outline">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="hero__slide" data-slide="2">
+                    <div class="hero__media">
+                        <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/pret.jpg" alt="Pré-Treino Ignite GPRIME">
+                    </div>
+                    <div class="hero__content">
+                        <div class="hero__content-inner">
+                            <p class="hero__label">Pré-Treino</p>
+                            <h1 class="hero__title">IGNITE<br>PRE-WORKOUT</h1>
+                            <p class="hero__subtitle">Energia explosiva. Foco mental. Performance incomparável.</p>
+                            <div class="hero__actions">
+                                <a href="#" class="btn btn--primary">Conheça Agora</a>
+                                <a href="#" class="btn btn--outline">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Controls -->
+            <div class="hero__controls">
+                <button class="hero__arrow hero__arrow--prev" id="hero-prev" aria-label="Slide anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <div class="hero__dots" id="hero-dots">
+                    <button class="hero__dot hero__dot--active" data-dot="0" aria-label="Slide 1"></button>
+                    <button class="hero__dot" data-dot="1" aria-label="Slide 2"></button>
+                    <button class="hero__dot" data-dot="2" aria-label="Slide 3"></button>
+                </div>
+                <button class="hero__arrow hero__arrow--next" id="hero-next" aria-label="Próximo slide">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Benefits Bar -->
+        <section class="benefits-bar" id="benefits-bar">
+            <div class="benefits-bar__inner">
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                    </div>
+                    <div class="benefit-item__text">
+                        <strong>Qualidade Certificada</strong>
+                        <span>Laudos laboratoriais</span>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <div class="benefit-item__text">
+                        <strong>Alta Performance</strong>
+                        <span>Fórmulas avançadas</span>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    </div>
+                    <div class="benefit-item__text">
+                        <strong>Entrega Rápida</strong>
+                        <span>Para todo o Brasil</span>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-item__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="benefit-item__text">
+                        <strong>Compra Segura</strong>
+                        <span>Dados protegidos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="products-section" id="produtos">
+            <div class="section-wrap">
+                <div class="section-header">
+                    <p class="section-label">Nossos Produtos</p>
+                    <h2 class="section-title">DESTAQUES</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card" id="product-1">
+                        <div class="product-card__badge">Novo</div>
+                        <div class="product-card__image">
+                            <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/why.jpg" alt="Whey Protein Isolado GPRIME">
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Proteínas</span>
+                            <h3 class="product-card__name">Whey Protein Isolado</h3>
+                            <p class="product-card__desc">25g proteína | Zero lactose | 900g</p>
+                            <a href="#" class="btn btn--sm btn--primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="product-card" id="product-2">
+                        <div class="product-card__badge product-card__badge--hot">Top</div>
+                        <div class="product-card__image">
+                            <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/creata.jpg" alt="Creatina Monohidratada GPRIME">
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Performance</span>
+                            <h3 class="product-card__name">Creatina Monohidratada</h3>
+                            <p class="product-card__desc">5g por dose | 100% pura | 300g</p>
+                            <a href="#" class="btn btn--sm btn--primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="product-card" id="product-3">
+                        <div class="product-card__image">
+                            <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/pre.jpg" alt="Ignite Pre-Workout GPRIME">
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Pré-Treino</span>
+                            <h3 class="product-card__name">Ignite Pre-Workout</h3>
+                            <p class="product-card__desc">300mg cafeína | Beta-alanina | 300g</p>
+                            <a href="#" class="btn btn--sm btn--primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="product-card" id="product-4">
+                        <div class="product-card__image">
+                            <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/bcca.jpg" alt="BCAA 12:1:1 GPRIME">
+                        </div>
+                        <div class="product-card__info">
+                            <span class="product-card__category">Aminoácidos</span>
+                            <h3 class="product-card__name">BCAA 12:1:1</h3>
+                            <p class="product-card__desc">12g BCAA por dose | 60 doses</p>
+                            <a href="#" class="btn btn--sm btn--primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-section__cta">
+                    <a href="#" class="btn btn--outline-dark">Ver Todos os Produtos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Split Feature -->
+        <section class="split-feature" id="sobre">
+            <div class="split-feature__media">
+                <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/3.jpg" alt="Nossa História - GPRIME">
+            </div>
+            <div class="split-feature__content">
+                <div class="split-feature__content-inner">
+                    <p class="section-label">Nossa História</p>
+                    <h2 class="section-title">NASCEMOS PARA<br>PERFORMANCE</h2>
+                    <div class="section-divider section-divider--left"></div>
+                    <p class="split-feature__text">
+                        A GPRIME nasceu da paixão pela performance e pelo compromisso com a excelência. 
+                        Cada produto é desenvolvido com ingredientes de alta qualidade, testados e aprovados 
+                        para entregar resultados reais.
+                    </p>
+                    <p class="split-feature__text">
+                        Nossa missão é potencializar o potencial de cada atleta — do iniciante ao profissional. 
+                        Ciência, tecnologia e compromisso com a qualidade: esse é o DNA GPRIME.
+                    </p>
+                    <a href="#" class="btn btn--primary">Conheça Mais</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-section__inner">
+                <div class="stat-item" id="stat-1">
+                    <span class="stat-item__number" data-target="50000">0</span>
+                    <span class="stat-item__plus">+</span>
+                    <span class="stat-item__label">Clientes Satisfeitos</span>
+                </div>
+                <div class="stat-item" id="stat-2">
+                    <span class="stat-item__number" data-target="30">0</span>
+                    <span class="stat-item__plus">+</span>
+                    <span class="stat-item__label">Produtos</span>
+                </div>
+                <div class="stat-item" id="stat-3">
+                    <span class="stat-item__number" data-target="100">0</span>
+                    <span class="stat-item__plus">%</span>
+                    <span class="stat-item__label">Qualidade Certificada</span>
+                </div>
+                <div class="stat-item" id="stat-4">
+                    <span class="stat-item__number" data-target="500">0</span>
+                    <span class="stat-item__plus">+</span>
+                    <span class="stat-item__label">Pontos de Venda</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Banner -->
+        <section class="category-section" id="categorias">
+            <div class="section-wrap">
+                <div class="section-header">
+                    <p class="section-label">Explore</p>
+                    <h2 class="section-title">CATEGORIAS</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="category-grid">
+                    <a href="#" class="category-card category-card--lg" id="cat-proteinas">
+                        <div class="category-card__bg">
+                            <div class="category-card__placeholder">
+                                <span>CATEGORIA 1<br>800×500px</span>
+                            </div>
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Proteínas</h3>
+                            <span class="category-card__cta">Explorar →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card" id="cat-performance">
+                        <div class="category-card__bg">
+                            <div class="category-card__placeholder">
+                                <span>CATEGORIA 2<br>400×500px</span>
+                            </div>
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Performance</h3>
+                            <span class="category-card__cta">Explorar →</span>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card" id="cat-saude">
+                        <div class="category-card__bg">
+                            <div class="category-card__placeholder">
+                                <span>CATEGORIA 3<br>400×500px</span>
+                            </div>
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Saúde & Bem-estar</h3>
+                            <span class="category-card__cta">Explorar →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Athletes Section -->
+        <section class="athletes-section" id="atletas">
+            <div class="section-wrap">
+                <div class="section-header">
+                    <p class="section-label">Time GPRIME</p>
+                    <h2 class="section-title">NOSSOS ATLETAS</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="athletes-grid">
+                    <div class="athlete-card" id="athlete-1">
+                        <div class="athlete-card__image">
+                            <div class="athlete-card__image-placeholder">
+                                <span>ATLETA 1<br>400×500px</span>
+                            </div>
+                        </div>
+                        <div class="athlete-card__info">
+                            <h3 class="athlete-card__name">Nome do Atleta</h3>
+                            <span class="athlete-card__sport">Bodybuilding</span>
+                        </div>
+                    </div>
+                    <div class="athlete-card" id="athlete-2">
+                        <div class="athlete-card__image">
+                            <div class="athlete-card__image-placeholder">
+                                <span>ATLETA 2<br>400×500px</span>
+                            </div>
+                        </div>
+                        <div class="athlete-card__info">
+                            <h3 class="athlete-card__name">Nome do Atleta</h3>
+                            <span class="athlete-card__sport">CrossFit</span>
+                        </div>
+                    </div>
+                    <div class="athlete-card" id="athlete-3">
+                        <div class="athlete-card__image">
+                            <div class="athlete-card__image-placeholder">
+                                <span>ATLETA 3<br>400×500px</span>
+                            </div>
+                        </div>
+                        <div class="athlete-card__info">
+                            <h3 class="athlete-card__name">Nome do Atleta</h3>
+                            <span class="athlete-card__sport">Powerlifting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / Newsletter -->
+        <section class="cta-section" id="newsletter">
+            <div class="cta-section__bg">
+                <div class="cta-section__bg-placeholder">
+                    <span>BACKGROUND CTA — 1920×600px</span>
+                </div>
+            </div>
+            <div class="cta-section__content">
+                <p class="section-label section-label--light">Fique por dentro</p>
+                <h2 class="section-title section-title--light">RECEBA NOVIDADES<br>E OFERTAS EXCLUSIVAS</h2>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" class="newsletter-input" id="newsletter-email" required>
+                    <button type="submit" class="btn btn--primary">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Blog / Articles -->
+        <section class="blog-section" id="blog">
+            <div class="section-wrap">
+                <div class="section-header">
+                    <p class="section-label">Conteúdo</p>
+                    <h2 class="section-title">BLOG GPRIME</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card" id="blog-1">
+                        <div class="blog-card__image">
+                            <div class="blog-card__image-placeholder">
+                                <span>BLOG 1<br>600×400px</span>
+                            </div>
+                        </div>
+                        <div class="blog-card__content">
+                            <span class="blog-card__category">Nutrição</span>
+                            <h3 class="blog-card__title">Como escolher o melhor Whey Protein para seu objetivo</h3>
+                            <p class="blog-card__excerpt">Descubra as diferenças entre concentrado, isolado e hidrolisado...</p>
+                            <a href="#" class="blog-card__link">Ler mais →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card" id="blog-2">
+                        <div class="blog-card__image">
+                            <div class="blog-card__image-placeholder">
+                                <span>BLOG 2<br>600×400px</span>
+                            </div>
+                        </div>
+                        <div class="blog-card__content">
+                            <span class="blog-card__category">Treino</span>
+                            <h3 class="blog-card__title">Creatina: tudo que você precisa saber</h3>
+                            <p class="blog-card__excerpt">O suplemento mais estudado da história e seus benefícios comprovados...</p>
+                            <a href="#" class="blog-card__link">Ler mais →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card" id="blog-3">
+                        <div class="blog-card__image">
+                            <div class="blog-card__image-placeholder">
+                                <span>BLOG 3<br>600×400px</span>
+                            </div>
+                        </div>
+                        <div class="blog-card__content">
+                            <span class="blog-card__category">Receitas</span>
+                            <h3 class="blog-card__title">5 receitas proteicas para o pós-treino</h3>
+                            <p class="blog-card__excerpt">Refeições rápidas e saborosas para maximizar a recuperação muscular...</p>
+                            <a href="#" class="blog-card__link">Ler mais →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer__top">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="/" class="footer__logo">
+                        <img src="https://pub-36369b2592df4a9285faa22bb50c3259.r2.dev/GPRIME%20SUPLEMENTOS%20%20sem%20fundo.png" alt="GPRIME Suplementos" class="logo-image footer-logo-image">
+                    </a>
+                    <p class="footer__tagline">Potencialize sua performance.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram" class="social-link" id="social-instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="social-link" id="social-facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="social-link" id="social-youtube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                        </a>
+                        <a href="#" aria-label="TikTok" class="social-link" id="social-tiktok">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Produtos</h4>
+                        <ul>
+                            <li><a href="#">Whey Protein</a></li>
+                            <li><a href="#">Creatina</a></li>
+                            <li><a href="#">Pré-Treino</a></li>
+                            <li><a href="#">BCAA</a></li>
+                            <li><a href="#">Vitaminas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Institucional</h4>
+                        <ul>
+                            <li><a href="#">Sobre a GPRIME</a></li>
+                            <li><a href="#">Nossos Atletas</a></li>
+                            <li><a href="#">Trabalhe Conosco</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Suporte</h4>
+                        <ul>
+                            <li><a href="#">Fale Conosco</a></li>
+                            <li><a href="#">Onde Comprar</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__inner">
+                <p>&copy; 2026 GPRIME Suplementos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
