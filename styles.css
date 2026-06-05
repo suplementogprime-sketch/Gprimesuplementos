@@ -1676,6 +1676,7 @@ input, button, textarea {
     /* Hero mobile */
     .hero {
         min-height: 500px;
+        height: 100dvh;
     }
 
     .hero__title {
